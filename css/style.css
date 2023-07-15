@@ -19,22 +19,31 @@ main {
     display: flex;
     justify-content: space-between;
     border: 1px;
-
+    padding: 15px 0; 
 }
 
 .navigation-logo {
-    margin-top:10px;
+   
 }
 
 .navigation-list 
 {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    padding: 0px;
+    margin: auto 0px;
+    width: 100%;
+
 } 
 
 .navigation-item {
+    font-family: "Poppins", Sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    text-transform: none;
     justify-content: space-between;
-    margin-right: 20px;;
+    margin-right:100px;
+ 
     @media screen and (max-width:1024px) {
         display: none;
     }
@@ -224,17 +233,54 @@ main {
     color: 	#404040;
 }
 
+
 .conditions-item {
     color: 	#404040;
+    list-style-type: disc;
+
+}
+.conditions-list {
+    margin: 20px;
+    padding: 0;
+ 
 }
 
 .take-part {
+    padding: 15px 30px;
     margin: 15px auto;
     display: block;
+    border-radius: 4px;
+    font-family: 'Source Sans 3', sans-serif;
+    font-weight: 600;
+    display: block;
+    color: #2294FA;
+    font-size: 14px;
+    text-transform: uppercase;
+    background-color: #FFFFFF;
+
 } 
+.take-part:hover {
+    margin: 15px auto;
+    cursor: pointer;
+    display: block;
+    color:#FFFFFF;
+    background-color: #79bcf7dc;
+} 
+
 .soclial-instagram {
     margin: 15px auto;
     display: block;
+    border-radius: 20px;
+    background-color: #EEC04B;
+    color:#FFFFFF;
+    padding: 10px 30px;
+}
+
+.soclial-instagram:hover {
+    background-color:#FFFFFF;;
+    color:#EEC04B;
+    cursor: pointer;
+
 }
 
 
@@ -285,7 +331,6 @@ font-style: normal;
     margin-bottom: 7px;
 }
 
-#FEC415
 .contacts > a:active, a:link, a:visited{
     color:#404040;
 }
