@@ -1,11 +1,13 @@
-
+main {
+    background: rgb(41,146,238);
+    background: linear-gradient(0deg, rgba(41,146,238,1) 0%, rgba(255,255,255,1) 50%, rgba(41,146,238,1) 100%);
+    padding-bottom: 15px;
+}
 .container {
     padding-left: 15px;
     padding-right: 15px;
     margin-left:auto;
     margin-right:auto;
-
-
 
     @media screen and (min-width:1200px) {
         max-width: 1200px;
@@ -15,15 +17,13 @@
 
 .navigation {
     display: flex;
-    background-color: aquamarine;
-    justify-content: center;
+    justify-content: space-between;
     border: 1px;
 
 }
 
 .navigation-logo {
-    margin-left: 10px;
-  
+    margin-top:10px;
 }
 
 .navigation-list 
@@ -58,7 +58,242 @@
     padding: 0;
     border: 0;
     background-color: rgba(0,0,0,0);
+
     @media screen and (min-width:1024px) {
         display: none;
     }
 }
+
+.navigation-logo{
+    display:flex;
+    justify-content: center;
+}
+
+
+.banner-photo {
+  margin:0px;
+  padding: 0px;
+  text-align: center;
+}
+
+.banner-desct {
+    @media screen and (max-width:1023px) {
+        display: none;
+    }
+}
+
+.banner-mob {
+    @media screen and (min-width:1024px) {
+        display: none;
+    }
+}
+
+.main-title {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 32px;
+    text-align: center;
+    text-transform: uppercase;
+    color:#FFFFFF;
+}
+.button-donate {
+    font-family: 'Source Sans 3', sans-serif;
+    margin: 15px auto;
+    display: block;
+    color: #FFFFFF;
+    font-size: 16px;
+    background-color: #2294FA;
+    text-transform: uppercase;
+    padding: 20px 40px;
+    border-radius: 5px;
+}
+
+.button-donate:hover, :active {
+    color:#000000;
+    background-color: #79bcf7dc;
+    cursor: pointer;
+}
+
+.second-title {
+    text-align: center;
+}
+
+.our-tagline {
+    font-family: 'Source Sans 3', sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    max-width: 360px;
+    text-align: center;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+}
+
+.our-goal-price {
+    display:flex;
+    justify-content: center;
+ }
+
+.our-goal-text {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 24px;
+    text-transform:uppercase;
+   max-width:180px;
+   margin-top: auto;
+   margin-bottom: auto;
+   margin-left: 20px;
+   color: #333333;
+}
+.donate-important {
+
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 24px;
+    color: 	#404040;
+    text-align: center;
+    margin-top: 20px;
+}
+
+
+.offer-prize {
+   display: flex;
+   max-width: 345px;
+   margin: auto;
+   padding-top:30px;
+}
+
+.paints {
+   position: relative;
+}
+
+.offer-text {
+   font-size: 15px;
+   padding: 3px;
+   border-radius: 7px;
+   width: 100px;
+   height: 125px;
+   background-color:#EEC04B;
+   position: absolute;
+   top: 0px;
+   right: 0px;
+}
+
+.offer-text-donate {  
+  font-family: 'Source Sans 3', sans-serif;
+  font-size: 13px;
+  font-weight: 600;
+  text-align: center;
+  color: #000000;
+  text-transform:uppercase;
+}
+.offer-text-summ {
+    font-family: 'Source Sans 3', sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    color: #FFFFFF;
+    text-align: center;
+}
+.offer-text-description {
+    font-family: 'Source Sans 3', sans-serif;
+    font-weight: 600;
+    font-size: 10px;
+    text-align: center;
+    color: #000000;
+}
+
+.our-slogan {
+  max-width: 380px;
+  font-family: 'Source Sans 3', sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+  text-align: center;
+  margin: auto;
+
+}
+
+.conditions {
+    width: 380px;
+    margin: auto;
+    color: 	#404040;
+}
+
+.conditions-header {
+    color: 	#404040;
+}
+
+.conditions-item {
+    color: 	#404040;
+}
+
+.take-part {
+    margin: 15px auto;
+    display: block;
+} 
+.soclial-instagram {
+    margin: 15px auto;
+    display: block;
+}
+
+
+.slider {
+   display: flex;
+   justify-content: center;
+}
+
+
+.address-bottom{
+    display:flex;
+    justify-content: center;
+}
+
+.legal-nfo {
+    display:flex;
+    justify-content: center;
+}
+
+.contacts {
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+}
+
+.address-bottom {
+font-family: 'Poppins', sans-serif;
+font-weight: 300;
+font-style: normal;
+  font-size: 16px;
+}
+
+
+.contacts-header {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+  text-transform: uppercase;
+  font-size: 26px;
+  margin-bottom: 5px;
+} 
+
+.contacts > li {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 12px;
+    color:#404040;
+    margin-bottom: 7px;
+}
+
+#FEC415
+.contacts > a:active, a:link, a:visited{
+    color:#404040;
+}
+
+
+footer {
+    padding-bottom: 30px;
+}
+
+/* Button Instagram   */ 
+
