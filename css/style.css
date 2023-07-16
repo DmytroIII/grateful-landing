@@ -39,9 +39,7 @@ main {
 } 
 
 .navigation-item {
-    font-family: "Poppins", Sans-serif;
     font-size: 20px;
-    font-weight: 600;
     text-transform: none;
     justify-content: space-between;
     margin-right:100px;
@@ -55,7 +53,7 @@ main {
 .navigation-link:active,
 .navigation-link:focus  {
     text-decoration: none;
-    color:black;
+    color:#1d1c1c;
 }
 
 .navigation-link:hover
@@ -100,8 +98,6 @@ main {
 }
 
 .main-title {
-    font-family: 'Poppins', sans-serif;
-    font-weight: 600;
     font-size: 32px;
     text-align: center;
     text-transform: uppercase;
@@ -112,7 +108,6 @@ main {
     }
 }
 .button-donate {
-    font-family: 'Source Sans 3', sans-serif;
     margin: 15px auto;
     display: block;
     color: #FFFFFF;
@@ -128,7 +123,7 @@ main {
 }
 
 .button-donate:hover, :active {
-    color:#000000;
+    color:#1d1c1c;
     background-color: #79bcf7dc;
     cursor: pointer;
 }
@@ -143,9 +138,8 @@ main {
 }
 
 .our-tagline {
-    font-family: 'Source Sans 3', sans-serif;
-    font-size: 15px;
     font-weight: 400;
+    font-size: 15px;
     max-width: 360px;
     text-align: center;
     margin: auto;
@@ -153,7 +147,7 @@ main {
     margin-bottom: 20px;
 
     @media screen and (min-width:1024px) {
-        max-width: 900px;
+        max-width: 1200px;
         font-size: 36px;
     }
 }
@@ -178,15 +172,13 @@ main {
 
 
 .our-goal-text {
-    font-family: 'Poppins', sans-serif;
-    font-weight: 600;
+
     font-size: 24px;
     text-transform:uppercase;
    max-width:180px;
    margin-top: auto;
    margin-bottom: auto;
    margin-left: 20px;
-   color: #333333;
 
    @media screen and (min-width:1024px) {
     max-width: 350px;
@@ -194,11 +186,8 @@ main {
 }
 }
 .donate-important {
-
-    font-family: 'Poppins', sans-serif;
-    font-weight: 600;
     font-size: 24px;
-    color: 	#404040;
+    color: 	#1D1C1C;
     text-align: center;
     margin-top: 20px;
 
@@ -214,7 +203,7 @@ main {
    padding-top:30px;
 
    @media screen and (min-width:1024px) {
-   max-width: 1100px;
+   max-width: 1200px;
 }
 
 }
@@ -237,6 +226,7 @@ main {
 
 
 .offer-text {
+
    font-size: 15px;
    padding: 3px;
    border-radius: 7px;
@@ -257,11 +247,9 @@ main {
 }
 
 .offer-text-donate {  
-  font-family: 'Source Sans 3', sans-serif;
+    font-weight: 400;  
   font-size: 13px;
-  font-weight: 600;
   text-align: center;
-  color: #000000;
   text-transform:uppercase;
 
   @media screen and (min-width:1024px) {
@@ -272,24 +260,20 @@ main {
 
 }
 .offer-text-summ {
-    font-family: 'Source Sans 3', sans-serif;
     font-size: 15px;
-    font-weight: 600;
     color: #FFFFFF;
     text-align: center;
     
   @media screen and (min-width:1024px) {
-    font-size: 32px;
+    font-size: 45px;
 
 }
 }
 
 .offer-text-description {
-    font-family: 'Source Sans 3', sans-serif;
-    font-weight: 600;
+    font-weight: 400;  
     font-size: 10px;
     text-align: center;
-    color: #000000;
 
     
   @media screen and (min-width:1024px) {
@@ -298,18 +282,16 @@ main {
 }
 
 .our-slogan {
-  max-width: 380px;
-  font-family: 'Source Sans 3', sans-serif;
   font-weight: 400;
+  max-width: 380px;
   font-size: 18px;
-  line-height: 1.2;
   text-align: center;
   margin: auto;
 
   @media screen and (min-width:1024px) {
     font-size: 36px;
-    max-width: 900px;
-    line-height: 1.2;
+    max-width: 1200px;
+
 }
 
 }
@@ -317,32 +299,45 @@ main {
 .conditions {
     max-width: 380px;
     margin: auto;
-    color: 	#404040;
+
 
     @media screen and (min-width:1024px) {
         font-size: 36px;
-        max-width: 1000px;
+        max-width: 1200px;
+        font-weight: 400;
     }
 }
 
 .conditions-header {
-    color: 	#404040;
     font-size: 16px;
+    font-weight: 400;
 
     @media screen and (min-width:1024px) {
         font-size: 36px;
+         margin-top:0px;
     }
 }
 
 
 .conditions-item {
-    color: 	#404040;
+    text-align: center;
     list-style-type: disc;
+
 
     @media screen and (min-width:1024px) {
         font-size: 36px;
+        font-weight: 400;
     }
 }
+
+.conditions-result {
+font-size: 28px;    
+margin: auto;    
+max-width: 600px;
+text-align: center;
+}
+
+
 .conditions-list {
     margin: 20px;
     padding: 0;
@@ -354,8 +349,6 @@ main {
     margin: 15px auto;
     display: block;
     border-radius: 4px;
-    font-family: 'Source Sans 3', sans-serif;
-    font-weight: 600;
     display: block;
     color: #2294FA;
     font-size: 14px;
@@ -366,6 +359,7 @@ main {
         font-size: 26px;
         padding: 20px 40px;
         border-radius: 8px;
+
     }
 
 } 
@@ -432,27 +426,20 @@ main {
 }
 
 .address-bottom {
-font-family: 'Poppins', sans-serif;
-font-weight: 300;
-font-style: normal;
+  font-style: normal;
   font-size: 16px;
 }
 
 
 .contacts-header {
-    font-family: 'Poppins', sans-serif;
-    font-weight: 600;
   text-transform: uppercase;
   font-size: 26px;
   margin-bottom: 5px;
 } 
 
 .contacts > li {
-    font-family: 'Poppins', sans-serif;
-    font-weight: 300;
     font-style: normal;
     font-size: 12px;
-    color:#404040;
     margin-bottom: 7px;
 }
 
@@ -463,7 +450,7 @@ font-style: normal;
 }
 
 .contacts > a:active, a:link, a:visited{
-    color:#404040;
+    color:#1D1C1C;
 }
 
 
