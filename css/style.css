@@ -22,8 +22,20 @@ main {
     padding: 15px 0; 
 }
 
+.navigation-logo-mob  {
+    @media screen and (min-width:1024px) {
+        display: none;
+    }
+}
+
 .navigation-logo {
     @media screen and (min-width:1024px) {
+        display: none;
+    }
+}
+
+.navigation-logo-desct {
+    @media screen and (max-width:1024px) {
         display: none;
     }
 }
