@@ -23,7 +23,9 @@ main {
 }
 
 .navigation-logo {
-   
+    @media screen and (min-width:1024px) {
+        display: none;
+    }
 }
 
 .navigation-list 
@@ -313,13 +315,23 @@ main {
 }
 
 .conditions {
-    width: 380px;
+    max-width: 380px;
     margin: auto;
     color: 	#404040;
+
+    @media screen and (min-width:1024px) {
+        font-size: 36px;
+        max-width: 1000px;
+    }
 }
 
 .conditions-header {
     color: 	#404040;
+    font-size: 16px;
+
+    @media screen and (min-width:1024px) {
+        font-size: 36px;
+    }
 }
 
 
@@ -327,6 +339,9 @@ main {
     color: 	#404040;
     list-style-type: disc;
 
+    @media screen and (min-width:1024px) {
+        font-size: 36px;
+    }
 }
 .conditions-list {
     margin: 20px;
@@ -346,6 +361,12 @@ main {
     font-size: 14px;
     text-transform: uppercase;
     background-color: #FFFFFF;
+
+    @media screen and (min-width:1024px) {
+        font-size: 26px;
+        padding: 20px 40px;
+        border-radius: 8px;
+    }
 
 } 
 .take-part:hover {
@@ -382,6 +403,10 @@ main {
 .address-bottom{
     display:flex;
     justify-content: center;
+
+    @media screen and (min-width:1024px) {
+        display: none;
+    }
 }
 
 .legal-nfo {
@@ -393,6 +418,17 @@ main {
     margin: 0px;
     padding: 0px;
     text-align: center;
+
+    @media screen and (min-width:1024px) {
+        display: none;
+    }
+}
+
+.navigation-logo-button {
+
+@media screen and (min-width:1024px) {
+    display: none;
+}
 }
 
 .address-bottom {
@@ -420,6 +456,12 @@ font-style: normal;
     margin-bottom: 7px;
 }
 
+.navigation-desctop {
+    @media screen and (max-width:1023px) {
+        display: none;
+    }
+}
+
 .contacts > a:active, a:link, a:visited{
     color:#404040;
 }
@@ -429,5 +471,48 @@ footer {
     padding-bottom: 30px;
 }
 
-/* Button Instagram   */ 
 
+.contacts-desctop-header {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 40px;
+    @media screen and (max-width:1023px) {
+        display: none;
+    }
+}
+
+.contacts-desctop-list {
+    font-size: 26px;
+    overflow: hidden;
+    display: block;
+    text-align: center;
+   
+
+    @media screen and (max-width:1023px) {
+        display: none;
+    }
+
+}
+
+.contacts-desctop-list li {
+    width: 50%;
+	float: left;
+   /*  list-style-type:disc; */
+}
+
+.address-bottom-desctop {
+    font-size: 26px;
+    @media screen and (max-width:1023px) {
+        display: none;
+    }
+
+}
+
+.navigation-logo-button-desctop {
+    font-size: 26px;
+   display: block;
+   text-align: center;
+    @media screen and (max-width:1023px) {
+        display: none;
+    }
+}
