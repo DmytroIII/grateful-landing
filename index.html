@@ -6,12 +6,15 @@
     <title>Grainful - Вдячні</title>
     <link rel="stylesheet" href="./css/normalize.css">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
       </style>
-       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
-       <script src="./js/script.js" defer></script>
+
+
+
 </head>
 <body>
    <header class="header">
@@ -24,12 +27,23 @@
                 <li class="navigation-item"><a href="#url-goal"class="navigation-link">Наша ціль</a></li>
                 <li class="navigation-item"><a href="#bottom-contact"class="navigation-link">Контакти</a></li>
             </ul>
-            <button type="button" class="button-mobile button-open" data-menu-open>   
-            <a href="./index.html" class="navigation-burger"><img src="./images/burger_active.png" alt="open menu"></a>
+            <button type="button" class="button-mobile button-open" data-menu-open >   
+            <a href="./index.html" class="navigation-burger"><img src="./images/burger_active.png" alt="open menu" ></a>
            <!--  <a href="./index.html" class="navigation-burger"><img src="./images/close-active.png" alt="open menu"></a> -->
             </button>
         </nav>
     </div>
+
+    <div class="mobile-menu-container is-hidden" id="mobile-menu-container" data-menu>
+        <div class="container mobile-menu-box">
+
+            <button type="button" class="button-mobile close" data-menu-close>
+            </button>
+
+        </div>
+    </div>
+
+
    </header>
 
    <main>
@@ -65,28 +79,30 @@
     <h2 class="second-title">Що ми купуємо:</h2>
     <div class="container">
         
-            <div class="wrapper">
-                <i id="left" class="fa-solid fa-angle-left"></i>
-                <div class="carousel">
-                  <img class ="carousel-desct" src="./images/slider/defibrilator-desct.png" alt="img" draggable="false">
-                  <img class ="carousel-desct" src="./images/slider/turniquet-desct.png" alt="img" draggable="false">
-                  <img class ="carousel-desct" src="./images/slider/suction-cup-desct.png" alt="img" draggable="false">
-                  <img class ="carousel-desct" src="./images/slider/shvl-desct.png" alt="img" draggable="false">
-                  <img class ="carousel-desct" src="./images/slider/lamp-desct.png" alt="img" draggable="false">
-                  <img class ="carousel-desct" src="./images/slider/ekg-dect.png" alt="img" draggable="false">
-                  <img class ="carousel-desct" src="./images/slider/display-desct.png" alt="img" draggable="false">
+        <div class="slider single-item">
+    
+            <div ><img class="carousel-desct" src="/images/slider/ekg-dect.png" alt=""></div>
+            <div><img class="carousel-desct" src="/images/slider/display-desct.png" alt=""></div>
+            <div><img class="carousel-desct" src="/images/slider/defibrilator-desct.png" alt=""></div>
+            <div><img class="carousel-desct" src="/images/slider/ekg-dect.png" alt=""></div>
+            <div><img class="carousel-desct" src="/images/slider/lamp-desct.png" alt=""></div>
+            <div><img class="carousel-desct" src="/images/slider/shvl-desct.png" alt=""></div>
+            <div><img class="carousel-desct" src="/images/slider/suction-cup-desct.png" alt=""></div>
+        </div>
 
-                  <img class ="carousel-mob" src="./images/slider/defibrilator-mob.png" alt="img" draggable="false">
-                  <img class ="carousel-mob" src="./images/slider/turniquet-mob.png" alt="img" draggable="false">
-                  <img class ="carousel-mob" src="./images/slider/suction-cup-mob.png" alt="img" draggable="false">
-                  <img class ="carousel-mob" src="./images/slider/shvl-mob.png" alt="img" draggable="false">
-                  <img class ="carousel-mob" src="./images/slider/lamp-mob.png" alt="img" draggable="false">
-                  <img class ="carousel-mob" src="./images/slider/ekg-mob.png" alt="img" draggable="false">
-                  <img class ="carousel-mob" src="./images/slider/display-mob.png" alt="img" draggable="false">
+        <div class="slider single-item-mob">
+            <div class="carousel-mob"><img src="/images/slider/ekg-mob.png" alt=""></div>
+            <div class="carousel-mob"><img src="/images/slider/display-mob.png" alt=""></div>
+            <div class="carousel-mob"><img src="/images/slider/defibrilator-mob.png" alt=""></div>
+            <div class="carousel-mob"><img src="/images/slider/ekg-mob.png" alt=""></div>
+            <div class="carousel-mob"><img src="/images/slider/lamp-mob.png" alt=""></div>
+            <div class="carousel-mob"><img src="/images/slider/shvl-mob.png" alt=""></div>
+            <div class="carousel-mob"><img src="/images/slider/suction-cup-mob.png" alt=""></div>
+   
+        </div>
 
-                </div>
-                <i id="right" class="fa-solid fa-angle-right"></i>
-              </div>
+
+ 
 
     </div>
    </section>
@@ -192,6 +208,10 @@
 
 </div>
    </footer>
+   <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    
+   <script src="slick/slick.min.js"></script>
+   <script src="./js/main.js"></script>
 </body>
 </html>
 
