@@ -2,12 +2,14 @@ main {
     background: rgb(41,146,238);
     background: linear-gradient(0deg, rgba(41,146,238,1) 0%, rgba(255,255,255,1) 50%, rgba(41,146,238,1) 100%);
     padding-bottom: 15px;
+    min-width:480px;
 }
 .container {
-    padding-left: 15px;
-    padding-right: 15px;
+    padding-left: 24px;
+    padding-right: 24px;
     margin-left:auto;
     margin-right:auto;
+
 
     @media screen and (min-width:1200px) {
         max-width: 1200px;
@@ -19,7 +21,11 @@ main {
     display: flex;
     justify-content: space-between;
     border: 1px;
-    padding: 15px 0; 
+    min-width: 432px;
+
+    @media screen and (min-width:1024px) {
+        padding: 15px 0;
+    }
 }
 
 .navigation-logo-mob  {
@@ -75,7 +81,6 @@ main {
 
 .button-mobile {
     display: inline-block;
-    margin-right: 15px;
     padding: 0;
     border: 0;
     background-color: rgba(0,0,0,0);
@@ -121,22 +126,29 @@ main {
 }
 .button-donate {
     margin: 15px auto;
-    display: block;
-    color: #FFFFFF;
-    font-size: 16px;
-    background-color: #2294FA;
-    text-transform: uppercase;
-    padding: 20px 40px;
-    border-radius: 5px;
+    display: flex;
+    border-radius: 30px;
+    padding: 18px 55px;
+    color: #1d1c1c;
+    background-color: #fec415;
+    font-style: normal;
+    font-size: 15px;
+    line-height: 1.7em;
+    font-weight: 700;
+    letter-spacing: 0.2px;
+    transition: all .3s;
+
 
     @media screen and (min-width:1024px) {
-        font-size: 36px;
+        font-size: 16px;
+        line-height: 1.56em;
+        letter-spacing: 0px;
     }
 }
 
-.button-donate:hover, :active {
-    color:#1d1c1c;
-    background-color: #79bcf7dc;
+.button-donate:hover, .button-donate:active {
+    color:#ffffff;
+    background-color: #1d1c1c;
     cursor: pointer;
 }
 
@@ -356,25 +368,6 @@ text-align: center;
  
 }
 
-.take-part {
-    padding: 15px 30px;
-    margin: 15px auto;
-    display: block;
-    border-radius: 4px;
-    display: block;
-    color: #2294FA;
-    font-size: 14px;
-    text-transform: uppercase;
-    background-color: #FFFFFF;
-
-    @media screen and (min-width:1024px) {
-        font-size: 26px;
-        padding: 20px 40px;
-        border-radius: 8px;
-
-    }
-
-} 
 .take-part:hover {
     margin: 15px auto;
     cursor: pointer;
@@ -514,4 +507,78 @@ footer {
     @media screen and (max-width:1023px) {
         display: none;
     }
+}
+
+
+/* Slider */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+.wrapper{
+  display: flex;
+  max-width: 1200px;
+  position: relative;
+}
+.wrapper i{
+  top: 50%;
+  height: 44px;
+  width: 44px;
+  color: #343F4F;
+  cursor: pointer;
+  font-size: 1.15rem;
+  position: absolute;
+  text-align: center;
+  line-height: 44px;
+  background: #fff;
+  border-radius: 50%;
+  transform: translateY(-50%);
+  transition: transform 0.1s linear;
+}
+.wrapper i:active{
+  transform: translateY(-50%) scale(0.9);
+}
+.wrapper i:hover{
+  background: #f2f2f2;
+}
+.wrapper i:first-child{
+  left: -22px;
+  display: none;
+}
+.wrapper i:last-child{
+  right: -22px;
+}
+.wrapper .carousel{
+  font-size: 0px;
+  cursor: pointer;
+  overflow: hidden;
+  white-space: nowrap;
+  scroll-behavior: smooth;
+  border-radius: 30px;
+}
+.carousel.dragging{
+  cursor: grab;
+  scroll-behavior: auto;
+}
+.carousel.dragging img{
+  pointer-events: none;
+}
+.carousel img{
+  height: 380px;
+  object-fit: cover;
+  user-select: none;
+  margin-left: 14px;
+  width: calc(100% / 3);
+}
+.carousel img:first-child{
+  margin-left: 0px;
+}
+@media screen and (max-width: 900px) {
+  .carousel img{
+    width: calc(100% / 2);
+  }
+}
+@media screen and (max-width: 550px) {
+  .carousel img{
+    width: 100%;
+  }
 }

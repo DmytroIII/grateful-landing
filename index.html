@@ -9,12 +9,15 @@
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
       </style>
+       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+       <script src="./js/script.js" defer></script>
 </head>
 <body>
    <header class="header">
     <div class="header__items container">
         <nav class="navigation">
-            <a href="./index.html" class="navigation-logo-mob"><img src="./images/grateful_logo.png" alt="Home Grainful" width="115"></a>
+            <a href="./index.html" class="navigation-logo-mob"><img src="./images/grateful_logo.png" alt="Home Grainful" width="95"></a>
             <a href="./index.html" class="navigation-logo-desct"><img src="./images/Logo-desctop.png" alt="Home Grainful" width="269"></a>
             <ul class="navigation-list">
                 <li class="navigation-item"><a href="#what-buy"class="navigation-link">Що ми купуємо</a></li>
@@ -22,8 +25,8 @@
                 <li class="navigation-item"><a href="#bottom-contact"class="navigation-link">Контакти</a></li>
             </ul>
             <button type="button" class="button-mobile button-open" data-menu-open>   
-            <a href="./index.html" class="navigation-burger"><img src="./images/burger_active.png" alt="open menu" width="39" height="18"></a>
-            <!-- <a href="./index.html" class="navigation-burger-close"><img src="./images/close.png" alt="open menu" width="39" height="18"></a> -->
+            <a href="./index.html" class="navigation-burger"><img src="./images/burger_active.png" alt="open menu"></a>
+           <!--  <a href="./index.html" class="navigation-burger"><img src="./images/close-active.png" alt="open menu"></a> -->
             </button>
         </nav>
     </div>
@@ -31,16 +34,23 @@
 
    <main>
 
+    
    <section class="banner">
     <div class="container">
         <div class="banner-photo">
             <picture>
-            <img class="banner-mob" src="./images/art_auction_mob.png" alt="art_object" width="450"  />
+            <img class="banner-mob" src="./images/art_auction_mob.png" alt="art_object" width="432"  />
             <img class="banner-desct" src="./images/art_auction_desct.png" alt="art_object" width="1200" />
         </picture>
         </div>
+   
+
     </div>
    </section>
+
+
+
+
    <section cass="art_help">
     <div class="container">
          <h1 class="main-title">Мистецтво рятує!</h1>
@@ -54,15 +64,21 @@
    <section cass="carousel" id="what-buy">
     <h2 class="second-title">Що ми купуємо:</h2>
     <div class="container">
-        <div class="slider">
-         <div class="slider-element"><img src="./images/slider/display.jpg" alt="turniquet" width="137" height="137"></div>
-         <div class="slider-element"><img src="./images/slider/defibrilator.jpg" alt="turniquet" width="137" height="137"></div>
-         <div class="slider-element"><img src="./images/slider/ekg.jpg" alt="turniquet" width="137" height="137"></div>
-     <!--     <div class="slider"><img src="./images/slider/turniquet.jpg" alt="turniquet" width="137" height="137"></div>
-         <div class="slider"><img src="./images/slider/lamp.jpg" alt="turniquet" width="137" height="137"></div>
-         <div class="slider"><img src="./images/slider/suction-cup.jpg" alt="turniquet" width="137" height="137"></div>
-         <div class="slider"><img src="./images/slider/shvl.jpg" alt="turniquet" width="137" height="137"></div> -->
-        </div>
+        
+            <div class="wrapper">
+                <i id="left" class="fa-solid fa-angle-left"></i>
+                <div class="carousel">
+                  <img src="./images/slider/defibrilator-desct.png" alt="img" draggable="false">
+                  <img src="./images/slider/turniquet-desct.png" alt="img" draggable="false">
+                  <img src="./images/slider/suction-cup-desct.png" alt="img" draggable="false">
+                  <img src="./images/slider/shvl-desct.png" alt="img" draggable="false">
+                  <img src="./images/slider/lamp-desct.png" alt="img" draggable="false">
+                  <img src="./images/slider/ekg-dect.png" alt="img" draggable="false">
+                  <img src="./images/slider/display-desct.png" alt="img" draggable="false">
+                </div>
+                <i id="right" class="fa-solid fa-angle-right"></i>
+              </div>
+
     </div>
    </section>
 
@@ -113,7 +129,7 @@
                     у призначенні вкажи свій контактний номер.
                 </li>
             </ul>
-            <button class="take-part">Взяти участь!</button>
+            <button class="button-donate">Взяти участь!</button>
              <div class="conditions-result">За результатами стежте на нашій сторінці.
                 Там же відзвітуємо про надану допомогу!</div>  
 
