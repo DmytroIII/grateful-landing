@@ -18,7 +18,7 @@
 </head>
 <body>
    <header class="header">
-    <div class="header__items container">
+    <div class="header-items container">
         <nav class="navigation">
             <a href="./index.html" class="navigation-logo-mob"><img src="./images/grateful_logo.png" alt="Home Grainful" width="95"></a>
             <a href="./index.html" class="navigation-logo-desct"><img src="./images/Logo-desctop.png" alt="Home Grainful" width="269"></a>
@@ -28,18 +28,15 @@
                 <li class="navigation-item"><a href="#bottom-contact"class="navigation-link">Контакти</a></li>
             </ul>
             <button type="button" class="button-mobile button-open" data-menu-open >   
-            <a href="./index.html" class="navigation-burger"><img src="./images/burger_active.png" alt="open menu" ></a>
+           <img src="./images/burger_active.png" alt="open menu" class="navigation-burger" >
            <!--  <a href="./index.html" class="navigation-burger"><img src="./images/close-active.png" alt="open menu"></a> -->
             </button>
         </nav>
     </div>
-
-    <div class="mobile-menu-container is-hidden" id="mobile-menu-container" data-menu>
+    <div class="mobile-menu-container" id="mobile-menu-container">
         <div class="container mobile-menu-box">
-
             <button type="button" class="button-mobile close" data-menu-close>
             </button>
-
         </div>
     </div>
 
@@ -49,14 +46,24 @@
    <main>
 
     
-   <section class="banner">
+    <section class="banner">
     <div class="container">
+     
+        <div class="mobile-menu is-hidden" id="mobile-menu-container" data-menu >
+        <ul class="navigation-list-mob-menu">
+            <li class="navigation-item-mob-menu"><a href="#what-buy"class="navigation-link">Що ми купуємо</a></li>
+            <li class="navigation-item-mob-menu"><a href="#url-goal"class="navigation-link">Наша ціль</a></li>
+            <li class="navigation-item-mob-menu"><a href="#bottom-contact"class="navigation-link">Контакти</a></li>
+        </ul>
+    </div>
+  
         <div class="banner-photo">
             <picture>
             <img class="banner-mob" src="./images/art_auction_mob.png" alt="art_object" width="432"  />
             <img class="banner-desct" src="./images/art_auction_desct.png" alt="art_object" width="1200" />
         </picture>
-        </div>
+     
+    </div>
    
 
     </div>
@@ -212,6 +219,7 @@
     
    <script src="slick/slick.min.js"></script>
    <script src="./js/main.js"></script>
+   <script src="./js/menu.js"></script>
 </body>
 </html>
 
