@@ -74,9 +74,19 @@ main {
 
     position: absolute;
     background-color: #ffffff;
-    width: 100%;
-left:50%;
-transform:translate(-50%);
+    width: 480px;
+    left: 67%;
+    transform:translate(-50%);
+
+   
+    animation-duration: 0.3s;
+    animation-timing-function: ease;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-fill-mode: backwards;
+    animation-play-state: running;
+   
 
 @media screen and (min-width:1024px) {
     display: none;
